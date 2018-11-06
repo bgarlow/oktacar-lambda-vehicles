@@ -1,0 +1,34 @@
+{
+  "name": "mock_api_lambda",
+  "version": "1.0.0",
+  "description": "A Lambda function that returns info about the request and JWT passed in by a custom Lambda authorizer",
+  "main": "index.js",
+  "scripts": {
+    "test": "lambda-local --timeout 300 --lambda-path index.js --event-path event.json",
+    "realtest": "lambda-local --timeout 300 --lambda-path index.js --event-path event2.json",
+    "bundle": "rm -f jwt-inspector.zip ; zip mock-lambda-api.zip -r *.js *.json node_modules/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgarlow/mock_api_lambda.git"
+  },
+  "keywords": [
+    "Okta",
+    "JWT",
+    "AWS",
+    "Lambda",
+    "authorizer"
+  ],
+  "author": "Brent Garlow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bgarlow/mock_api_lambda/issues"
+  },
+  "homepage": "https://github.com/bgarlow/mock_api_lambda#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "lambda-local": "^1.5.1"
+  }
+}

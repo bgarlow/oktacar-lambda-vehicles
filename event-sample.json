@@ -1,0 +1,11 @@
+{
+  "type": "TOKEN",
+  "authorizationToken": "Bearer [your token here]",
+  "methodArn": "arn:aws:execute-api:us-east-1:[your gateway here]/*/GET/resource/*",
+  "queryStringParameters": {
+    "iban_value": "GB32ESSE40486562136016",
+    "country_name": "UNITED KINGDOM",
+    "iso_country_code": "GB",
+    "iban_iso_country_code": "GB"
+  }
+}
