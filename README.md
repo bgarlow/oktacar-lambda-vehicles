@@ -1,7 +1,7 @@
-# Mock API Lambda
-A simple Node.js Lambda function that acts as an API endpoint for AWS API Gateway. This Lambda is for demo purposes only, and is designed to work with this custom Lambda Authorizer:
+# oktacar-lambda-vehicles
+Vehicle inventory API for Oktacar demo. This Lambda is for demo purposes only, and is designed to work with this custom Lambda Authorizer:
 
-https://github.com/bgarlow/node-lambda-oauth2-jwt-authorizer-generic.git 
+https://github.com/bgarlow/oktacar-lambda-authorizer.git 
 
 ## Use Case
 
